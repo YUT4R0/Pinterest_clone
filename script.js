@@ -1,5 +1,6 @@
 const grids = document.querySelectorAll('.grid');
-const headings = document.querySelectorAll('.heading .wraper .text');
+const headings = document.querySelectorAll('.heading .wrapper .text');
+const columns = document.querySelectorAll('.column').length
 
 const enter_Screen = (index) => {
     const Grid = grids[index]
@@ -12,7 +13,7 @@ const enter_Screen = (index) => {
       column.classList.remove('animate-before', 'animate-after')  
     })
 
-    //Heading.classList.remove('animate-before', 'animate-after')
+    Heading.classList.remove('animate-before', 'animate-after')
 };
 
 const exit_Screen = (index, exitDelay) => {
@@ -57,5 +58,5 @@ const setupAnimation_LOOP = ({ initialScreen_index, time_PER_Screen, exitDelay }
 
 setupAnimation_LOOP({
     time_PER_Screen: 2000,
-    exitDelay: 100 * 7
+    exitDelay: 200 * columns
 })
