@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 1.75rem 1rem 1.5rem;
+
+    h3 {
+        color: $red;
+        font-size: 2rem;
+        font-weight: 700;
+
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+
+                padding: 1rem;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $black;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            margin-left: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+
+            button {
+                font-size: 1rem;
+                font-weight: 700;
+
+                border: none;
+                border-radius: 25px;
+
+                padding: .625rem .75rem;
+
+                cursor: pointer;
+            }
+
+            .login {
+                color: $white;
+                background: $red;
+
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    filter: brightness(.8);
+                }
+            }
+
+            .signup {
+                color: $black;
+                background: $gray-light;
+
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    filter: brightness(.8);
+                }
+            }
+        }
+
+    }
+}
